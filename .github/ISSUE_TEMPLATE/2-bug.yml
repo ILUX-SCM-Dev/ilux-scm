@@ -1,0 +1,28 @@
+name: Bug
+description: Algo que funciona mal
+labels: ["tipo: bug"]
+body:
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducirlo
+      placeholder: |
+        1. Entrar como almacén
+        2. Escanear ...
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Qué esperabas vs. qué pasó
+    validations:
+      required: true
+  - type: input
+    id: dispositivo
+    attributes:
+      label: Dispositivo y navegador
+      placeholder: "Android, Chrome"
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Capturas o error de la consola

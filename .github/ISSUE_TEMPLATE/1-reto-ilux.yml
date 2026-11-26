@@ -1,0 +1,30 @@
+name: Reto o pedido de ILUX
+description: Algo nuevo que ILUX pidió en una reunión o por mensaje
+title: "Reto ILUX: "
+labels: ["reto ILUX", "tipo: funcionalidad"]
+body:
+  - type: input
+    id: quien
+    attributes:
+      label: ¿Quién lo pidió y cuándo?
+      placeholder: "Diana, reunión del 2 de dic"
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema que quieren resolver
+      description: Con las palabras de ILUX, no la solución técnica.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: ¿Cómo sabremos que está terminado?
+      placeholder: |
+        - [ ] El almacén puede ...
+        - [ ] Se genera ...
+  - type: textarea
+    id: preguntas
+    attributes:
+      label: Preguntas abiertas para ILUX
